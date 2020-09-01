@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Running Smoke suite in Chrome</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/2</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Aug 16 11:50:03 EDT 2020</td>
+<td>Started on:</td><td>Tue Sep 01 00:42:05 EDT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>43 seconds (43139 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1196 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,179 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test_signIn.VerifyUserFullName.beforeEachTestMethod()'><b>beforeEachTestMethod</b><br>Test class: test_signIn.VerifyUserFullName<br>Parameters: CH</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 83
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;MOHAMMAD-UDDIN&apos;, ip: &apos;192.168.40.241&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00849563+2725219]
+	Ordinal0 [0x00748551+1672529]
+	Ordinal0 [0x00630359+525145]
+	Ordinal0 [0x005C0B77+68471]
+	Ordinal0 [0x005BD32C+54060]
+	Ordinal0 [0x005DCC37+183351]
+	Ordinal0 [0x005DCA3D+182845]
+	Ordinal0 [0x005DA94B+174411]
+	Ordinal0 [0x005C2528+75048]
+	Ordinal0 [0x005C35A0+79264]
+	Ordinal0 [0x005C3539+79161]
+	Ordinal0 [0x0075D607+1758727]
+	GetHandleVerifier [0x00966546+1050150]
+	GetHandleVerifier [0x00966291+1049457]
+	GetHandleVerifier [0x009710D7+1094071]
+	GetHandleVerifier [0x00966B46+1051686]
+	Ordinal0 [0x00755B06+1727238]
+	Ordinal0 [0x0075EB7B+1764219]
+	Ordinal0 [0x0075ECE3+1764579]
+	Ordinal0 [0x00774C05+1854469]
+	BaseThreadInitThunk [0x75CDF989+25]
+	RtlGetAppContainerNamedObjectPath [0x77C574A4+228]
+	RtlGetAppContainerNamedObjectPath [0x77C57474+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at base.Config.beforeEachTestMethod(Config.java:25)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace273077527", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace273077527'><pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 83
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;MOHAMMAD-UDDIN&apos;, ip: &apos;192.168.40.241&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_261&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00849563+2725219]
+	Ordinal0 [0x00748551+1672529]
+	Ordinal0 [0x00630359+525145]
+	Ordinal0 [0x005C0B77+68471]
+	Ordinal0 [0x005BD32C+54060]
+	Ordinal0 [0x005DCC37+183351]
+	Ordinal0 [0x005DCA3D+182845]
+	Ordinal0 [0x005DA94B+174411]
+	Ordinal0 [0x005C2528+75048]
+	Ordinal0 [0x005C35A0+79264]
+	Ordinal0 [0x005C3539+79161]
+	Ordinal0 [0x0075D607+1758727]
+	GetHandleVerifier [0x00966546+1050150]
+	GetHandleVerifier [0x00966291+1049457]
+	GetHandleVerifier [0x009710D7+1094071]
+	GetHandleVerifier [0x00966B46+1051686]
+	Ordinal0 [0x00755B06+1727238]
+	Ordinal0 [0x0075EB7B+1764219]
+	Ordinal0 [0x0075ECE3+1764579]
+	Ordinal0 [0x00774C05+1854469]
+	BaseThreadInitThunk [0x75CDF989+25]
+	RtlGetAppContainerNamedObjectPath [0x77C574A4+228]
+	RtlGetAppContainerNamedObjectPath [0x77C57474+180]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at base.Config.beforeEachTestMethod(Config.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+</pre></div></td>
+<td>0</td>
+<td>test_signIn.VerifyUserFullName@ea4a92b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test_register.NewRegisterTest.beforeEachTestMethod()'><b>beforeEachTestMethod</b><br>Test class: test_register.NewRegisterTest</td>
+<td></td>
+<td>0</td>
+<td>test_register.NewRegisterTest@3c5a99da</td></tr>
+<tr>
+<td title='test_signIn.VerifyUserFullName.afterEachTestMethod()'><b>afterEachTestMethod</b><br>Test class: test_signIn.VerifyUserFullName</td>
+<td></td>
+<td>0</td>
+<td>test_signIn.VerifyUserFullName@ea4a92b</td></tr>
+<tr>
+<td title='test_register.NewRegisterTest.afterEachTestMethod()'><b>afterEachTestMethod</b><br>Test class: test_register.NewRegisterTest</td>
+<td></td>
+<td>0</td>
+<td>test_register.NewRegisterTest@3c5a99da</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -78,12 +249,12 @@ function toggleAllBoxes() {
 <td title='test_register.NewRegisterTest.registerWithNewEmailTest()'><b>registerWithNewEmailTest</b><br>Test class: test_register.NewRegisterTest</td>
 <td></td>
 <td>0</td>
-<td>test_register.NewRegisterTest@75412c2f</td></tr>
+<td>test_register.NewRegisterTest@3c5a99da</td></tr>
 <tr>
 <td title='test_signIn.VerifyUserFullName.userFullNameTest()'><b>userFullNameTest</b><br>Test class: test_signIn.VerifyUserFullName</td>
 <td></td>
-<td>12</td>
-<td>test_signIn.VerifyUserFullName@50cbc42f</td></tr>
+<td>0</td>
+<td>test_signIn.VerifyUserFullName@ea4a92b</td></tr>
 </table><p>
 </body>
 </html>

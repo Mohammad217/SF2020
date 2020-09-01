@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="2" failed="0" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Booking.com - Smoke Test Suite" duration-ms="84469" started-at="2020-08-16T15:49:21Z" finished-at="2020-08-16T15:50:46Z">
+  <suite name="Booking.com - Smoke Test Suite" duration-ms="27273" started-at="2020-09-01T04:41:39Z" finished-at="2020-09-01T04:42:06Z">
     <groups>
     </groups>
-    <test name="Running Smoke suite in firefox" duration-ms="41292" started-at="2020-08-16T15:49:21Z" finished-at="2020-08-16T15:50:03Z">
+    <test name="Running Smoke suite in firefox" duration-ms="26063" started-at="2020-09-01T04:41:39Z" finished-at="2020-09-01T04:42:05Z">
       <class name="test_register.NewRegisterTest">
-        <test-method status="PASS" signature="beforeEachTestMethod(java.lang.String)[pri:0, instance:test_register.NewRegisterTest@5fe5c6f]" name="beforeEachTestMethod" is-config="true" duration-ms="9490" started-at="2020-08-16T11:49:52Z" finished-at="2020-08-16T11:50:01Z">
+        <test-method status="PASS" signature="beforeEachTestMethod(java.lang.String)[pri:0, instance:test_register.NewRegisterTest@6fffcba5]" name="beforeEachTestMethod" is-config="true" duration-ms="7473" started-at="2020-09-01T00:41:56Z" finished-at="2020-09-01T00:42:04Z">
           <params>
             <param index="0">
               <value>
@@ -18,17 +18,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTestMethod -->
-        <test-method status="PASS" signature="registerWithNewEmailTest()[pri:0, instance:test_register.NewRegisterTest@5fe5c6f]" name="registerWithNewEmailTest" duration-ms="0" started-at="2020-08-16T11:50:01Z" finished-at="2020-08-16T11:50:01Z">
+        <test-method status="PASS" signature="registerWithNewEmailTest()[pri:0, instance:test_register.NewRegisterTest@6fffcba5]" name="registerWithNewEmailTest" duration-ms="5" started-at="2020-09-01T00:42:04Z" finished-at="2020-09-01T00:42:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerWithNewEmailTest -->
-        <test-method status="PASS" signature="afterEachTestMethod()[pri:0, instance:test_register.NewRegisterTest@5fe5c6f]" name="afterEachTestMethod" is-config="true" duration-ms="1531" started-at="2020-08-16T11:50:01Z" finished-at="2020-08-16T11:50:03Z">
+        <test-method status="PASS" signature="afterEachTestMethod()[pri:0, instance:test_register.NewRegisterTest@6fffcba5]" name="afterEachTestMethod" is-config="true" duration-ms="1168" started-at="2020-09-01T00:42:04Z" finished-at="2020-09-01T00:42:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTestMethod -->
       </class> <!-- test_register.NewRegisterTest -->
       <class name="test_signIn.VerifyUserFullName">
-        <test-method status="PASS" signature="beforeEachTestMethod(java.lang.String)[pri:0, instance:test_signIn.VerifyUserFullName@2471cca7]" name="beforeEachTestMethod" is-config="true" duration-ms="18014" started-at="2020-08-16T11:49:21Z" finished-at="2020-08-16T11:49:39Z">
+        <test-method status="PASS" signature="beforeEachTestMethod(java.lang.String)[pri:0, instance:test_signIn.VerifyUserFullName@1ae369b7]" name="beforeEachTestMethod" is-config="true" duration-ms="8567" started-at="2020-09-01T00:41:39Z" finished-at="2020-09-01T00:41:47Z">
           <params>
             <param index="0">
               <value>
@@ -39,44 +39,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTestMethod -->
-        <test-method status="PASS" signature="userFullNameTest()[pri:0, instance:test_signIn.VerifyUserFullName@2471cca7]" name="userFullNameTest" duration-ms="10486" started-at="2020-08-16T11:49:39Z" finished-at="2020-08-16T11:49:50Z">
+        <test-method status="PASS" signature="userFullNameTest()[pri:0, instance:test_signIn.VerifyUserFullName@1ae369b7]" name="userFullNameTest" duration-ms="7555" started-at="2020-09-01T00:41:47Z" finished-at="2020-09-01T00:41:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userFullNameTest -->
-        <test-method status="PASS" signature="afterEachTestMethod()[pri:0, instance:test_signIn.VerifyUserFullName@2471cca7]" name="afterEachTestMethod" is-config="true" duration-ms="1748" started-at="2020-08-16T11:49:50Z" finished-at="2020-08-16T11:49:52Z">
+        <test-method status="PASS" signature="afterEachTestMethod()[pri:0, instance:test_signIn.VerifyUserFullName@1ae369b7]" name="afterEachTestMethod" is-config="true" duration-ms="1279" started-at="2020-09-01T00:41:55Z" finished-at="2020-09-01T00:41:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTestMethod -->
       </class> <!-- test_signIn.VerifyUserFullName -->
     </test> <!-- Running Smoke suite in firefox -->
-    <test name="Running Smoke suite in Chrome" duration-ms="43139" started-at="2020-08-16T15:50:03Z" finished-at="2020-08-16T15:50:46Z">
+    <test name="Running Smoke suite in Chrome" duration-ms="1196" started-at="2020-09-01T04:42:05Z" finished-at="2020-09-01T04:42:06Z">
       <class name="test_register.NewRegisterTest">
-        <test-method status="PASS" signature="beforeEachTestMethod(java.lang.String)[pri:0, instance:test_register.NewRegisterTest@75412c2f]" name="beforeEachTestMethod" is-config="true" duration-ms="10401" started-at="2020-08-16T11:50:31Z" finished-at="2020-08-16T11:50:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[CH]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="beforeEachTestMethod(java.lang.String)[pri:0, instance:test_register.NewRegisterTest@3c5a99da]" name="beforeEachTestMethod" is-config="true" duration-ms="0" started-at="2020-09-01T00:42:06Z" finished-at="2020-09-01T00:42:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTestMethod -->
-        <test-method status="PASS" signature="registerWithNewEmailTest()[pri:0, instance:test_register.NewRegisterTest@75412c2f]" name="registerWithNewEmailTest" duration-ms="0" started-at="2020-08-16T11:50:41Z" finished-at="2020-08-16T11:50:41Z">
+        <test-method status="SKIP" signature="registerWithNewEmailTest()[pri:0, instance:test_register.NewRegisterTest@3c5a99da]" name="registerWithNewEmailTest" duration-ms="1" started-at="2020-09-01T00:42:06Z" finished-at="2020-09-01T00:42:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerWithNewEmailTest -->
-        <test-method status="PASS" signature="afterEachTestMethod()[pri:0, instance:test_register.NewRegisterTest@75412c2f]" name="afterEachTestMethod" is-config="true" duration-ms="4458" started-at="2020-08-16T11:50:41Z" finished-at="2020-08-16T11:50:46Z">
+        <test-method status="SKIP" signature="afterEachTestMethod()[pri:0, instance:test_register.NewRegisterTest@3c5a99da]" name="afterEachTestMethod" is-config="true" duration-ms="0" started-at="2020-09-01T00:42:06Z" finished-at="2020-09-01T00:42:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTestMethod -->
       </class> <!-- test_register.NewRegisterTest -->
       <class name="test_signIn.VerifyUserFullName">
-        <test-method status="PASS" signature="startTestSuite()[pri:0, instance:test_signIn.VerifyUserFullName@50cbc42f]" name="startTestSuite" is-config="true" duration-ms="130" started-at="2020-08-16T11:49:21Z" finished-at="2020-08-16T11:49:21Z">
+        <test-method status="PASS" signature="startTestSuite()[pri:0, instance:test_signIn.VerifyUserFullName@ea4a92b]" name="startTestSuite" is-config="true" duration-ms="28" started-at="2020-09-01T00:41:39Z" finished-at="2020-09-01T00:41:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTestSuite -->
-        <test-method status="PASS" signature="beforeEachTestMethod(java.lang.String)[pri:0, instance:test_signIn.VerifyUserFullName@50cbc42f]" name="beforeEachTestMethod" is-config="true" duration-ms="11024" started-at="2020-08-16T11:50:03Z" finished-at="2020-08-16T11:50:14Z">
+        <test-method status="FAIL" signature="beforeEachTestMethod(java.lang.String)[pri:0, instance:test_signIn.VerifyUserFullName@ea4a92b]" name="beforeEachTestMethod" is-config="true" duration-ms="0" started-at="2020-09-01T00:42:05Z" finished-at="2020-09-01T00:42:05Z">
           <params>
             <param index="0">
               <value>
@@ -84,18 +77,136 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 83
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'MOHAMMAD-UDDIN', ip: '192.168.40.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00849563+2725219]
+	Ordinal0 [0x00748551+1672529]
+	Ordinal0 [0x00630359+525145]
+	Ordinal0 [0x005C0B77+68471]
+	Ordinal0 [0x005BD32C+54060]
+	Ordinal0 [0x005DCC37+183351]
+	Ordinal0 [0x005DCA3D+182845]
+	Ordinal0 [0x005DA94B+174411]
+	Ordinal0 [0x005C2528+75048]
+	Ordinal0 [0x005C35A0+79264]
+	Ordinal0 [0x005C3539+79161]
+	Ordinal0 [0x0075D607+1758727]
+	GetHandleVerifier [0x00966546+1050150]
+	GetHandleVerifier [0x00966291+1049457]
+	GetHandleVerifier [0x009710D7+1094071]
+	GetHandleVerifier [0x00966B46+1051686]
+	Ordinal0 [0x00755B06+1727238]
+	Ordinal0 [0x0075EB7B+1764219]
+	Ordinal0 [0x0075ECE3+1764579]
+	Ordinal0 [0x00774C05+1854469]
+	BaseThreadInitThunk [0x75CDF989+25]
+	RtlGetAppContainerNamedObjectPath [0x77C574A4+228]
+	RtlGetAppContainerNamedObjectPath [0x77C57474+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 83
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'MOHAMMAD-UDDIN', ip: '192.168.40.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00849563+2725219]
+	Ordinal0 [0x00748551+1672529]
+	Ordinal0 [0x00630359+525145]
+	Ordinal0 [0x005C0B77+68471]
+	Ordinal0 [0x005BD32C+54060]
+	Ordinal0 [0x005DCC37+183351]
+	Ordinal0 [0x005DCA3D+182845]
+	Ordinal0 [0x005DA94B+174411]
+	Ordinal0 [0x005C2528+75048]
+	Ordinal0 [0x005C35A0+79264]
+	Ordinal0 [0x005C3539+79161]
+	Ordinal0 [0x0075D607+1758727]
+	GetHandleVerifier [0x00966546+1050150]
+	GetHandleVerifier [0x00966291+1049457]
+	GetHandleVerifier [0x009710D7+1094071]
+	GetHandleVerifier [0x00966B46+1051686]
+	Ordinal0 [0x00755B06+1727238]
+	Ordinal0 [0x0075EB7B+1764219]
+	Ordinal0 [0x0075ECE3+1764579]
+	Ordinal0 [0x00774C05+1854469]
+	BaseThreadInitThunk [0x75CDF989+25]
+	RtlGetAppContainerNamedObjectPath [0x77C574A4+228]
+	RtlGetAppContainerNamedObjectPath [0x77C57474+180]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at base.Config.beforeEachTestMethod(Config.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeEachTestMethod -->
-        <test-method status="PASS" signature="userFullNameTest()[pri:0, instance:test_signIn.VerifyUserFullName@50cbc42f]" name="userFullNameTest" duration-ms="12547" started-at="2020-08-16T11:50:14Z" finished-at="2020-08-16T11:50:26Z">
+        <test-method status="SKIP" signature="userFullNameTest()[pri:0, instance:test_signIn.VerifyUserFullName@ea4a92b]" name="userFullNameTest" duration-ms="0" started-at="2020-09-01T00:42:06Z" finished-at="2020-09-01T00:42:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userFullNameTest -->
-        <test-method status="PASS" signature="afterEachTestMethod()[pri:0, instance:test_signIn.VerifyUserFullName@50cbc42f]" name="afterEachTestMethod" is-config="true" duration-ms="4707" started-at="2020-08-16T11:50:26Z" finished-at="2020-08-16T11:50:31Z">
+        <test-method status="SKIP" signature="afterEachTestMethod()[pri:0, instance:test_signIn.VerifyUserFullName@ea4a92b]" name="afterEachTestMethod" is-config="true" duration-ms="0" started-at="2020-09-01T00:42:06Z" finished-at="2020-09-01T00:42:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterEachTestMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:test_signIn.VerifyUserFullName@50cbc42f]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-08-16T11:50:46Z" finished-at="2020-08-16T11:50:46Z">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test_signIn.VerifyUserFullName@ea4a92b]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-09-01T00:42:06Z" finished-at="2020-09-01T00:42:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
