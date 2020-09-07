@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RegressionSuite]">
+  <parameter name="browser" value="http://www.booking.com"/>
+  <test name="Booking.com Regression Test Suite">
+    <parameter name="browser" value="http://www.booking.com"/>
+    <classes>
+      <class name="test_signIn.LoginWithValidCredentialUsingEmail"/>
+      <class name="test_signIn.LoginWithInvalidCredentialUsingEmailTest"/>
+      <class name="test_register.NewRegisterTest"/>
+    </classes>
+  </test> <!-- Booking.com Regression Test Suite -->
+  <test name="Booking.com Regression Test Suite(failed)">
+    <parameter name="browser" value="http://www.booking.com"/>
+    <classes>
+      <class name="test_register.NewRegisterTest">
+        <methods>
+          <include name="registerWithNewEmailTest"/>
+        </methods>
+      </class> <!-- test_register.NewRegisterTest -->
+      <class name="test_signIn.LoginWithInvalidCredentialUsingEmailTest">
+        <methods>
+          <include name="loginwithInvalidPasswordTest"/>
+        </methods>
+      </class> <!-- test_signIn.LoginWithInvalidCredentialUsingEmailTest -->
+      <class name="test_signIn.LoginWithValidCredentialUsingEmail">
+        <methods>
+          <include name="loginWithValidCredentialUsingEmailTest"/>
+          <include name="beforeEachTestMethod"/>
+          <include name="startTestSuite"/>
+        </methods>
+      </class> <!-- test_signIn.LoginWithValidCredentialUsingEmail -->
+    </classes>
+  </test> <!-- Booking.com Regression Test Suite(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->
