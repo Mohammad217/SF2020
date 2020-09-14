@@ -1,21 +1,328 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="0" passed="0">
+<testng-results skipped="3" failed="1" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="5" started-at="2020-09-06T04:45:04Z" finished-at="2020-09-06T04:45:04Z">
+  <suite name="Booking.com - Smoke Test Suite" duration-ms="24097" started-at="2020-09-13T19:48:57Z" finished-at="2020-09-13T19:49:21Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="5" started-at="2020-09-06T04:45:04Z" finished-at="2020-09-06T04:45:04Z">
-      <class name="base.Config">
-        <test-method status="PASS" signature="startTestSuite()[pri:0, instance:base.Config@233c0b17]" name="startTestSuite" is-config="true" duration-ms="25" started-at="2020-09-06T00:45:04Z" finished-at="2020-09-06T00:45:04Z">
+    <test name="Running Smoke suite in firefox" duration-ms="22888" started-at="2020-09-13T19:48:57Z" finished-at="2020-09-13T19:49:20Z">
+      <class name="test_register.NewRegisterTest">
+        <test-method status="SKIP" signature="registerWithNewEmailTest()[pri:0, instance:test_register.NewRegisterTest@6fffcba5]" name="registerWithNewEmailTest" duration-ms="1" started-at="2020-09-13T15:49:20Z" finished-at="2020-09-13T15:49:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithNewEmailTest -->
+        <test-method status="SKIP" signature="beforeEachTestMethod(java.lang.String)[pri:0, instance:test_register.NewRegisterTest@6fffcba5]" name="beforeEachTestMethod" is-config="true" duration-ms="0" started-at="2020-09-13T15:49:20Z" finished-at="2020-09-13T15:49:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTestMethod -->
+        <test-method status="SKIP" signature="afterEachTestMethod()[pri:0, instance:test_register.NewRegisterTest@6fffcba5]" name="afterEachTestMethod" is-config="true" duration-ms="0" started-at="2020-09-13T15:49:20Z" finished-at="2020-09-13T15:49:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+      </class> <!-- test_register.NewRegisterTest -->
+      <class name="test_signIn.VerifyUserFullName">
+        <test-method status="PASS" signature="beforeEachTestMethod(java.lang.String)[pri:0, instance:test_signIn.VerifyUserFullName@1ae369b7]" name="beforeEachTestMethod" is-config="true" duration-ms="8230" started-at="2020-09-13T15:48:57Z" finished-at="2020-09-13T15:49:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FF]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTestMethod -->
+        <test-method status="FAIL" signature="userFullNameTest()[pri:0, instance:test_signIn.VerifyUserFullName@1ae369b7]" name="userFullNameTest" duration-ms="13432" started-at="2020-09-13T15:49:05Z" finished-at="2020-09-13T15:49:19Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to convert data to an object
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'MOHAMMAD-UDDIN', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 7328, moz:profile: C:\Users\alaud\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5b05605d-4bb6-40fc-bc41-4317304248bf
+*** Element info: {Using=xpath, value=//*[@id='root']/div/div[2]/div/div[1]/div[2]/div/div/div/form/div[3]/button}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to convert data to an object
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'MOHAMMAD-UDDIN', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 7328, moz:profile: C:\Users\alaud\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5b05605d-4bb6-40fc-bc41-4317304248bf
+*** Element info: {Using=xpath, value=//*[@id='root']/div/div[2]/div/div[1]/div[2]/div/div/div/form/div[3]/button}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at base.WDFunctions.clickByXpath(WDFunctions.java:39)
+	at test_signIn.VerifyUserFullName.userFullNameTest(VerifyUserFullName.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userFullNameTest -->
+        <test-method status="FAIL" signature="afterEachTestMethod()[pri:0, instance:test_signIn.VerifyUserFullName@1ae369b7]" name="afterEachTestMethod" is-config="true" duration-ms="0" started-at="2020-09-13T15:49:19Z" finished-at="2020-09-13T15:49:19Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'MOHAMMAD-UDDIN', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 7328, moz:profile: C:\Users\alaud\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5b05605d-4bb6-40fc-bc41-4317304248bf]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'MOHAMMAD-UDDIN', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 79.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200720193547, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 7328, moz:profile: C:\Users\alaud\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5b05605d-4bb6-40fc-bc41-4317304248bf
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+	at base.Config.afterEachTestMethod(Config.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:709)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+      </class> <!-- test_signIn.VerifyUserFullName -->
+    </test> <!-- Running Smoke suite in firefox -->
+    <test name="Running Smoke suite in Chrome" duration-ms="1192" started-at="2020-09-13T19:49:20Z" finished-at="2020-09-13T19:49:21Z">
+      <class name="test_register.NewRegisterTest">
+        <test-method status="SKIP" signature="registerWithNewEmailTest()[pri:0, instance:test_register.NewRegisterTest@3c5a99da]" name="registerWithNewEmailTest" duration-ms="1" started-at="2020-09-13T15:49:21Z" finished-at="2020-09-13T15:49:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithNewEmailTest -->
+        <test-method status="SKIP" signature="beforeEachTestMethod(java.lang.String)[pri:0, instance:test_register.NewRegisterTest@3c5a99da]" name="beforeEachTestMethod" is-config="true" duration-ms="0" started-at="2020-09-13T15:49:21Z" finished-at="2020-09-13T15:49:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTestMethod -->
+        <test-method status="SKIP" signature="afterEachTestMethod()[pri:0, instance:test_register.NewRegisterTest@3c5a99da]" name="afterEachTestMethod" is-config="true" duration-ms="0" started-at="2020-09-13T15:49:21Z" finished-at="2020-09-13T15:49:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+      </class> <!-- test_register.NewRegisterTest -->
+      <class name="test_signIn.VerifyUserFullName">
+        <test-method status="PASS" signature="startTestSuite()[pri:0, instance:test_signIn.VerifyUserFullName@ea4a92b]" name="startTestSuite" is-config="true" duration-ms="31" started-at="2020-09-13T15:48:57Z" finished-at="2020-09-13T15:48:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTestSuite -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:base.Config@233c0b17]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-09-06T00:45:04Z" finished-at="2020-09-06T00:45:04Z">
+        <test-method status="FAIL" signature="beforeEachTestMethod(java.lang.String)[pri:0, instance:test_signIn.VerifyUserFullName@ea4a92b]" name="beforeEachTestMethod" is-config="true" duration-ms="0" started-at="2020-09-13T15:49:20Z" finished-at="2020-09-13T15:49:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CH]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 83
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'MOHAMMAD-UDDIN', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00DD9563+2725219]
+	Ordinal0 [0x00CD8551+1672529]
+	Ordinal0 [0x00BC0359+525145]
+	Ordinal0 [0x00B50B77+68471]
+	Ordinal0 [0x00B4D32C+54060]
+	Ordinal0 [0x00B6CC37+183351]
+	Ordinal0 [0x00B6CA3D+182845]
+	Ordinal0 [0x00B6A94B+174411]
+	Ordinal0 [0x00B52528+75048]
+	Ordinal0 [0x00B535A0+79264]
+	Ordinal0 [0x00B53539+79161]
+	Ordinal0 [0x00CED607+1758727]
+	GetHandleVerifier [0x00EF6546+1050150]
+	GetHandleVerifier [0x00EF6291+1049457]
+	GetHandleVerifier [0x00F010D7+1094071]
+	GetHandleVerifier [0x00EF6B46+1051686]
+	Ordinal0 [0x00CE5B06+1727238]
+	Ordinal0 [0x00CEEB7B+1764219]
+	Ordinal0 [0x00CEECE3+1764579]
+	Ordinal0 [0x00D04C05+1854469]
+	BaseThreadInitThunk [0x7575F989+25]
+	RtlGetAppContainerNamedObjectPath [0x771274B4+228]
+	RtlGetAppContainerNamedObjectPath [0x77127484+180]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 83
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'MOHAMMAD-UDDIN', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00DD9563+2725219]
+	Ordinal0 [0x00CD8551+1672529]
+	Ordinal0 [0x00BC0359+525145]
+	Ordinal0 [0x00B50B77+68471]
+	Ordinal0 [0x00B4D32C+54060]
+	Ordinal0 [0x00B6CC37+183351]
+	Ordinal0 [0x00B6CA3D+182845]
+	Ordinal0 [0x00B6A94B+174411]
+	Ordinal0 [0x00B52528+75048]
+	Ordinal0 [0x00B535A0+79264]
+	Ordinal0 [0x00B53539+79161]
+	Ordinal0 [0x00CED607+1758727]
+	GetHandleVerifier [0x00EF6546+1050150]
+	GetHandleVerifier [0x00EF6291+1049457]
+	GetHandleVerifier [0x00F010D7+1094071]
+	GetHandleVerifier [0x00EF6B46+1051686]
+	Ordinal0 [0x00CE5B06+1727238]
+	Ordinal0 [0x00CEEB7B+1764219]
+	Ordinal0 [0x00CEECE3+1764579]
+	Ordinal0 [0x00D04C05+1854469]
+	BaseThreadInitThunk [0x7575F989+25]
+	RtlGetAppContainerNamedObjectPath [0x771274B4+228]
+	RtlGetAppContainerNamedObjectPath [0x77127484+180]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at base.Config.beforeEachTestMethod(Config.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTestMethod -->
+        <test-method status="SKIP" signature="userFullNameTest()[pri:0, instance:test_signIn.VerifyUserFullName@ea4a92b]" name="userFullNameTest" duration-ms="1" started-at="2020-09-13T15:49:21Z" finished-at="2020-09-13T15:49:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userFullNameTest -->
+        <test-method status="SKIP" signature="afterEachTestMethod()[pri:0, instance:test_signIn.VerifyUserFullName@ea4a92b]" name="afterEachTestMethod" is-config="true" duration-ms="0" started-at="2020-09-13T15:49:21Z" finished-at="2020-09-13T15:49:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:test_signIn.VerifyUserFullName@ea4a92b]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-09-13T15:49:21Z" finished-at="2020-09-13T15:49:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- base.Config -->
-    </test> <!-- Test1 -->
-  </suite> <!-- Suite1 -->
+      </class> <!-- test_signIn.VerifyUserFullName -->
+    </test> <!-- Running Smoke suite in Chrome -->
+  </suite> <!-- Booking.com - Smoke Test Suite -->
 </testng-results>

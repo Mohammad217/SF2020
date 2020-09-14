@@ -1,6 +1,7 @@
 package test_register;
 
 import org.testng.annotations.Test;
+
 import base.Config;
 
 public class Gropping extends Config{
