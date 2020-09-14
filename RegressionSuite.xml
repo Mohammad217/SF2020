@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="RegressionSuite">
   <test name="Booking.com Regression Test Suite">
+  <parameter name="browser" value="http://www.booking.com"/>
     <classes>
       <class name="test_signIn.LoginWithValidCredentialUsingEmail"/>
       <class name="test_signIn.LoginWithInvalidCredentialUsingEmailTest"/>
